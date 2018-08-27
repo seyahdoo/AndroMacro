@@ -1,0 +1,126 @@
+Python Server using conf files
+unity config editor
+android client sending hotheys
+
+
+Key Doings (can do multiple)
+	has image (png, gif)
+	turn key into another key
+	send keystrokes
+	send delay
+	open program
+
+	
+Config File
+{	
+	"Folders":[
+		{
+			"FolderName": "Root",
+			"FolderContent":{
+				"Buttons":{
+					1:{
+						"ID":"_doit"
+					},
+					2:{
+						"ID":"_hello"
+					}
+					3:{
+						"ID":"_csgo_folder",
+					},
+					4:{
+						"ID":"_holder_imgae"
+					}
+				
+				}
+			}
+		},
+		{
+			"FolderName": "CSGO",
+			"FolderContent":{
+				"Buttons":{
+					1:{
+						"ID":"_back"
+					},
+					2:{
+						"ID":"_buy_ak"
+					}
+					
+				
+				}
+			}
+		}
+	],
+	
+	"Buttons":[
+		{
+			"ID":"_doit",
+			"ActionPressed":{
+				"Run":"c:/doit.exe"
+			}
+		},
+		{
+			"ID":"_hello",
+			"ActionPressed":{
+				"Run":"c:/Hello.exe" 
+			}
+		},
+		{
+			"ID":"_csgo_folder",
+			"ActionPressed":{
+				"Folder":"CSGO"
+			},
+			"Image":"Csgo.png"
+		},
+		{
+			"ID":"_holder_imgae",
+			"ActionPressed":{
+				"ChangeButton":
+				{
+					"from":"_holder_imgae",
+					"to":""
+				}
+			},
+			"ActionReleased":{
+				"Run":"released.exe"		
+			}
+		},
+		{
+			"ID":"_back",
+			"ActionPressed":{
+				"Folder":"Root"
+			},
+			"Image":"Back.png"
+		
+		},
+		{
+			"ID":"_buy_ak",
+			"ActionPressed":{
+				"Run":"c:/csgo/buy_ak.exe"
+			},
+			"Image":"AK.png"
+		}
+	]
+}
+
+
+
+Network Commands:
+	Client Sends:
+		Get Image (id)
+		
+	Server Sends:
+		Set Config
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
