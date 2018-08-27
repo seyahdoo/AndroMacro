@@ -116,10 +116,17 @@ Network Commands:
 		
 		
 		
-		
-		
-		
-		
+API calls:
+	ServerSide:
+		Set Button Image (ButtonID, image)
+		Set Folder Contents (FolderID, slot_no, ButtonID)
+		Set Button Action(ButtonID, Action())
+	
+	ClientSide:
+		Send Button Pressed (ButtonID)	
+		Send Button Released (ButtonID)
+	
+	
 		
 		
 
